@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<svg xmlns="http://www.w3.org/2000/svg"
+      width="900" height="900" viewBox="0 0 900 900" preserveAspectRatio="xMidYMid meet">
+    <rect width="700" height="600" x="180" y="20" rx="14" ry="10"
+          stroke="#000000" stroke-width="2" fill="url(#grad2)"></rect>
+    <rect width="600" height="500" x="230" y="70" rx="14" ry="10"
+    stroke="#000000" stroke-width="2" fill="url(#patt)"></rect>
+    <defs>
+    <pattern id="patt" width="30" height="30" patternUnits="userSpaceOnUse"
+                 patternTransform="rotate(45)">
+        <circle cx="10" cy="10" r="10" stroke="black" fill="url(#grad)"></circle>
+    </pattern>
+        <radialGradient id="grad"fx="90%"fy="70%">
+            <stop offset="0%" stop-color="gray"></stop>
+            <stop offset="100%" stop-color="black"></stop>
+        </radialGradient>
+        <radialGradient id="grad1" cx="100%" cy="100%" fx="80%" fy="80%" r="110%">
+            <stop offset="0%" stop-color="black"></stop>
+            <stop offset="70%" stop-color="#1C1C1C"></stop>
+            <stop offset="90%" stop-color="#363636"></stop>
+            <stop offset="20%" stop-color="#A9A9A9"></stop>
+        </radialGradient>
+        <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#CFCFCF"></stop>
+            <stop offset="50%" stop-color="#696969"></stop>
+            <stop offset="100%" stop-color="#CFCFCF"></stop>
+        </linearGradient>
+    </defs>
+    <path stroke="black" stroke-width="2"
+          d="M300,150 H760 a20 20 0 0 1 20 20 v280 a20 20 0 0 1 -20 20 h-160 v30 h130 v20
+          h-400 v-20 h130 v-30 h-160 a20 20 0 0 1 -20 -20 v-280 a20 20 0 0 1 20 -20 Z"
+    fill="#D3D3D3">
+    </path>
+    <rect width="460" height="280" x="300" y="170" stroke="black" fill="url(#grad1)"></rect>
+</svg>
+</body>
+</html>
